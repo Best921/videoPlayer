@@ -8,6 +8,7 @@
 	height: 360px;
 	margin: 30px auto;
 	position: relative;
+	overflow: hidden;
 }
 .vContainer > video{
 	width: 100%;
@@ -47,8 +48,8 @@
 	cursor: pointer;
 	float: left;
 }
-.vContainer > .controller > .top > .progress .timeBar{
-	width: 0;
+.vContainer > .controller > .top > .progress > .timeBar{
+	width: 0%;
 	height: 100%;
 	background-color: #F9D43A;
 	display: block;
@@ -78,11 +79,18 @@
 .vContainer > .controller > .bottom > .play{
 	background: url("../images/icon/play.png") no-repeat center;
 }
+.vContainer > .controller > .bottom > .pause{
+	background: url("../images/icon/pause.png") no-repeat center;
+}
 .vContainer > .controller > .bottom > .stop{
 	background: url("../images/icon/stop.png") no-repeat center;
 }
 .vContainer > .controller > .bottom > .sound{
 	background: url("../images/icon/sound.png") no-repeat center;
+	float: right;
+}
+.vContainer > .controller > .bottom > .mute{
+	background: url("../images/icon/mute.png") no-repeat center;
 	float: right;
 }
 .vContainer > .controller > .bottom > .text{
@@ -92,7 +100,7 @@
 .vContainer > .controller > .bottom > .active{
 	color: #FFF;
 }
-.vContainer > .controller > .bottom > .volumn{
+.vContainer > .controller > .bottom > .volume{
 	width: 70px;
 	height: 10px;
 	background-color: #404040;
@@ -100,7 +108,7 @@
 	margin: 10px 10px 0 10px; 
 	cursor: pointer;
 }
-.vContainer > .controller > .bottom > .volumn > .volumnBar{
+.vContainer > .controller > .bottom > .volume > .volumeBar{
 	height: 100%;
 	width: 0px;
 	background-color: #EEE;
@@ -113,6 +121,5 @@
 	top: 50%;
 	left: 50%;
 	margin: -27px 0 0 -27px;
-	background: url("../images/loading.gif");
-	display: none;
+	background: url("../images/loading.gif") no-repeat center;
 }

@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="vContainer">
-		<video>
+		<video id="video">
 			<source src="source/imooc.mp4" type="video/mp4">
 			<source src="source/imooc.ogv" type="video/ogv">
 			您的浏览器不支持video标签
@@ -15,28 +15,29 @@
 		<div class="caption">MyVideoPlayer</div>
 		<div class="controller">
 			<div class="top">
-				<div class="progress">
-					<span class="timeBar"></span>
+				<div class="progress" id="progress">
+					<span class="timeBar" id="timeBar"></span>
 				</div>
 				<div class="time">
-					<span class="currentTime">00:00</span>
+					<span class="currentTime" id="currentTime"></span>
 					<span>/</span>
-					<span class="duration">00:00</span>
+					<span class="duration" id="duration"></span>
 				</div>
 			</div>
 			<div class="bottom">
-				<div class="button play"></div>
-				<div class="button stop"></div>
-				<div class="button text active">X1</div>
-				<div class="button text">X3</div>
-				<div class="volumn">
-					<span class="volumnBar"></span>
+				<div class="button play" id="play"></div>
+				<div class="button stop" id="stop"></div>
+				<div class="button text active" id="speed1">X1</div>
+				<div class="button text" id="speed3">X3</div>
+				<div class="volume" id="volume">
+					<span class="volumeBar" id="volumeBar"></span>
 				</div>
-				<div class="button sound"></div>
+				<div class="button sound" id="sound"></div>
 			</div>
 		</div>
-		<div class="loading"></div>
+		<div class="loading" id="loading"></div>
 	</div>
-	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
 </body>
 </html>
