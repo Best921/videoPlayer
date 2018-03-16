@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.vContainer{
+	width: 640px;
+	height: 360px;
+	margin: 30px auto;
+	position: relative;
+}
+.vContainer > video{
+	width: 100%;
+	height: 100%;
+}
+.vContainer > .caption{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #1f1f1f;
+	color: #ccc;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.vContainer > .controller{
+	width: 100%;
+	background-color: #1f1f1f;
+	color: #ccc;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.vContainer > .controller > .top{
+	height: 11px;
+	border-bottom: 1px solid #404040;
+	padding: 1px 5px;
+	background-color: #1f1f1f; 
+}
+.vContainer > .controller > .top > .progress{
+	width: 85%;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #404040;
+	cursor: pointer;
+	float: left;
+}
+.vContainer > .controller > .top > .progress .timeBar{
+	width: 0;
+	height: 100%;
+	background-color: #F9D43A;
+	display: block;
+	border-radius: 5px;
+}
+.vContainer > .controller > .top > .time{
+	width: 15%;
+	float: right;
+	font-size: 0;
+	text-align: center;
+	line-height: 12px;
+}
+.vContainer > .controller > .top > .time > span{
+	font-size: 11px;
+}
+.vContainer > .controller > .bottom{
+	clear: both;
+	background-color: #1f1f1f;
+}
+.vContainer > .controller > .bottom > .button{
+	width: 32px;
+	height: 32px;
+	float: left;
+	padding: 0 5px;
+	cursor: pointer;
+}
+.vContainer > .controller > .bottom > .play{
+	background: url("../images/icon/play.png") no-repeat center;
+}
+.vContainer > .controller > .bottom > .stop{
+	background: url("../images/icon/stop.png") no-repeat center;
+}
+.vContainer > .controller > .bottom > .sound{
+	background: url("../images/icon/sound.png") no-repeat center;
+	float: right;
+}
+.vContainer > .controller > .bottom > .text{
+	line-height: 32px;
+	color: #777;
+}
+.vContainer > .controller > .bottom > .active{
+	color: #FFF;
+}
+.vContainer > .controller > .bottom > .volumn{
+	width: 70px;
+	height: 10px;
+	background-color: #404040;
+	float: right;
+	margin: 10px 10px 0 10px; 
+	cursor: pointer;
+}
+.vContainer > .controller > .bottom > .volumn > .volumnBar{
+	height: 100%;
+	width: 0px;
+	background-color: #EEE;
+	display: block;
+}
